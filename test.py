@@ -41,11 +41,13 @@ def originalText(cipher_text, key):
 	
 # Driver code
 if __name__ == "__main__":
-	string = "HELLOWORLD"
-	keyword = "HEMANTH"
+	string = input('Enter the String')
+	keyword = input('Enter the Key')
 	key = generateKey(string, keyword)
 	cipher_text = cipherText(string,key)
 	print("Ciphertext :", cipher_text)
 	print("Original/Decrypted Text :",
 		originalText(cipher_text, key))
 
+# This code is contributed
+# by Pratik Somwanshi

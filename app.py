@@ -45,16 +45,16 @@ def welcome():
         if enc=='encrypt':
             cipher_text=cipherText(word,key)
             flash('The data was encrypted and the output is'+' '+cipher_text)
-            return render_template('result.html')
+            return render_template('index1.html')
         else:
             original_text=originalText(word,key)
             flash('The data was decrypted and the output is'+' '+original_text)
-            return render_template('result.html')
+            return render_template('index1.html')
     
         
         
         
-    return render_template('index.html',form=request.form)
+    return render_template('index1.html',form=request.form)
 
     
     
